@@ -18,23 +18,6 @@ ip-api.com (Geo Database)
 JSON Response
 ```
 
-## AWS Resources Created
-
-| Resource | Name | Purpose |
-|---|---|---|
-| IAM Role | geo_api_lambda_role | Lambda execution permissions |
-| IAM Policy | AWSLambdaBasicExecutionRole | CloudWatch logs access |
-| Lambda Function | geo-api-function | API logic & geo lookup |
-| API Gateway | geo-api | Public HTTP endpoint |
-| API Gateway Resource | /geo | API path |
-| API Gateway Method | GET | HTTP method |
-| API Gateway Integration | lambda_integration | Connect API → Lambda |
-| API Gateway Deployment | geo_deployment | Deploy the API |
-| API Gateway Stage | prod | Production environment |
-| Lambda Permission | allow_apigw | Allow API Gateway → Lambda |
-
----
-
 ## Prerequisites
 
 - AWS Account
@@ -49,7 +32,7 @@ JSON Response
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/geo-api.git
+git clone https://github.com/Bharathwaj-2001/geo-api.git
 cd geo-api
 ```
 
